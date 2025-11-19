@@ -13,23 +13,23 @@ Randomness failures can occur in both hardware and software. Embedded devices, l
 
 Here’s a simple Python example demonstrating a weak random choice:
 
-'''python
+```python
 import random
 
 # Non-cryptographic random choice
 secret = random.choice(['key1', 'key2', 'key3', 'key4'])
 print(f"Generated secret: {secret}")
-'''
+```
 
 In contrast, using a cryptographically secure pseudorandom number generator (CSPRNG) provides much stronger security:
 
-'''python
+```python
 import secrets
 
 # Cryptographically secure random choice
 secret = secrets.choice(['key1', 'key2', 'key3', 'key4'])
 print(f"Generated secret: {secret}")
-'''
+```
 
 CSPRNGs, like those provided by the `secrets` module in Python or `/dev/urandom` in Linux, ensure that generated numbers are unpredictable, even if an attacker knows the algorithm. Proper entropy sources are crucial, and developers must avoid shortcuts that may compromise randomness, such as using timestamps or low-entropy seeds.
 
