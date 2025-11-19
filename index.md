@@ -7,7 +7,7 @@ Welcome to my personal website! I am Álvaro Andrés De Lamo, a computer enginee
 
 I have extensive experience in **frontend and backend development**, **algorithms**, **databases**, and **cryptography**, which allows me to tackle projects end-to-end—from designing intuitive interfaces to implementing efficient server-side logic and secure data handling.
 
-My academic journey has given me a diverse international perspective. I have studied at the **University of Alicante** in Spain, participated in an Erasmus program at the **University of Silesia** in Poland, and gained additional experience at **Chestnut Hill College** in the United States. These experiences have strengthened my problem-solving skills, teamwork, and adaptability in multicultural environments.
+My academic journey has given me a diverse international perspective. I have studied at the **University of Alicante** in Spain, participated in an Erasmus program at the **University of Silesia** in Poland and in an International Mobility program at **Chestnut Hill College** in the United States. These experiences have strengthened my problem-solving skills, teamwork, and adaptability in multicultural environments.
 
 I enjoy building full-stack applications, exploring new frameworks, and learning emerging technologies. From hands-on coding projects to collaborative team experiences, I am driven by the challenge of creating functional, elegant, and reliable software solutions. My goal is to combine practical skills with a strong theoretical foundation to develop software that is innovative, robust, and maintainable.
 
