@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Randomness Failures in Cryptography"
 date: 2025-11-19
 tags: [cryptography, randomness, security]
