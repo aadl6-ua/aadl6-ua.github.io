@@ -16,3 +16,6 @@ I enjoy building full-stack applications, exploring new frameworks, and learning
 
 ## Blog
 This is where I will publish my technical articles, project reports, and tutorials related to software development, algorithms, databases, and applied computer science. My first post, *Randomness Failures in Cryptography*, is coming soon!
+## Blog
+- [Randomness Failures in Cryptography](2025/11/19/randomness-failures.html)
+
