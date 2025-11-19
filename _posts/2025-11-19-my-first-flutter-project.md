@@ -43,8 +43,6 @@ for (final p in points) {
   canvas.drawCircle(p, 4, paintPoint);
 }
 ```
-<cierra aquí tu bloque de código>
-
 This code generates smooth curves, gradient fills, and points for each measurement. It ensures that graphs are **visually appealing and responsive**, even without external chart libraries.
 
 ## User Interface Design
