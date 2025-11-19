@@ -69,6 +69,6 @@ This project demonstrates my ability to deliver a **polished, fully functional m
 
 **Why I chose this topic:**  
 
-I selected MyFitness because it combines **practical application development** with **technical problem-solving**. It highlights my understanding of Flutter, UI/UX, and state management, and provides a tangible demonstration of my programming skills, which aligns perfectly with my career direction in mobile software engineering.
+I selected MyFitness because it combines **practical application development** with **technical problem-solving**. It highlights my understanding of Flutter, UI/UX, and state management, and provides a tangible demonstration of my programming skills, which aligns perfectly with my career direction in software engineering.
 
 
