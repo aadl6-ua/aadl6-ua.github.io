@@ -1,9 +1,7 @@
 ---
 layout: default
-title: "Home"
+title: "Álvaro Andrés De Lamo"
 ---
-
-# Álvaro Andrés De Lamo
 
 Welcome to my personal website! I am Álvaro Andrés De Lamo, a computer engineering student passionate about software development, web applications, and programming innovation. This platform is where I share my projects, technical insights, and reflections on modern development practices.
 
