@@ -15,5 +15,5 @@ I enjoy building full-stack applications, exploring new frameworks, and learning
 🔗 **LinkedIn:** [Álvaro Andrés De Lamo](https://www.linkedin.com/in/alvaro-andres-de-lamo-50149b358/)
 
 ## Blog
-- [My first Flutter Project](2025/11/19/randomness-failures.html)
+- [My first Flutter Project](2025/11/19/mi-first-flutter-project.html)
 
