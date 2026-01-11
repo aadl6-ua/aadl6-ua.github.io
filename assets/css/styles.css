@@ -454,7 +454,8 @@ section:nth-child(even) {
   display: flex; 
   justify-content: space-between; 
   align-items: flex-start; 
-  gap: 1rem; 
+  gap: 1rem;
+  position: relative;
 }
 .education-info {
   display: flex;
@@ -751,7 +752,54 @@ footer p {
   .section-title { font-size: 2rem; margin-bottom: 2.5rem; }
   .skills-grid { gap: 1rem; }
   .skill-card { padding: 1.5rem 1.25rem; }
-  .education-header { flex-direction: column; }
+  
+  /* Education cards responsivas */
+  .education-card { 
+    padding: 1.5rem; 
+    border-radius: 8px;
+  }
+  .education-header { 
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .education-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: 100%;
+  }
+  .edu-logo {
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 12px;
+    padding: 8px;
+  }
+  .education-info h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  .education-degree {
+    font-size: 0.9rem;
+  }
+  .education-period {
+    font-size: 0.85rem;
+  }
+  .education-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  .education-note {
+    padding: 0.875rem;
+    font-size: 0.9rem;
+  }
+  .education-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
   section { padding: 4rem 2rem; }
   .contact-grid { grid-template-columns: 1fr; }
   .languages-grid { grid-template-columns: 1fr; }
@@ -770,6 +818,48 @@ footer p {
   .skills-grid { grid-template-columns: 1fr !important; }
   .tech-tags { gap: 0.625rem; }
   .tech-tag { padding: 0.5rem 1rem; font-size: 0.85rem; }
+  
+  /* Education edge-to-edge en móvil pequeño */
+  #education .container {
+    padding: 0;
+  }
+  .education-grid {
+    gap: 1.5rem;
+  }
+  .education-card {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding: 1.25rem 1.5rem;
+  }
+  .education-info h3 {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+  .edu-logo {
+    width: 64px;
+    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .education-note {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .transcript-link {
+    padding: 0.625rem 1rem;
+    font-size: 0.9rem;
+  }
+  .skill-badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
 
 /* Animations - Minimal and thoughtful */
