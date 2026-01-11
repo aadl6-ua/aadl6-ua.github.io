@@ -1,419 +1,365 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Álvaro Andrés De Lamo - Estudiante de Ingeniería Informática en la Universidad de Alicante. Especialización en Ingeniería del Software con experiencia internacional en Polonia y USA.">
-    <meta name="keywords" content="Álvaro Andrés De Lamo, Alvaro Andres De Lamo, Ingeniería Informática, Software Engineering, Full Stack Developer, Universidad de Alicante, Computer Science">
-    <meta name="author" content="Álvaro Andrés De Lamo">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aadl6-ua.github.io/">
-    <meta property="og:title" content="Álvaro Andrés De Lamo - Software Engineering Student">
-    <meta property="og:description" content="Estudiante de Ingeniería Informática especializado en Ingeniería del Software. Experiencia internacional en desarrollo full stack, machine learning y análisis de datos.">
-    <meta property="og:image" content="https://aadl6-ua.github.io/assets/profile-preview.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Álvaro Andrés De Lamo - Estudiante de Ingeniería Informática en la Universidad de Alicante. Especialización en Ingeniería del Software con experiencia internacional en Polonia y USA." />
+  <meta name="keywords" content="Álvaro Andrés De Lamo, Alvaro Andres De Lamo, Ingeniería Informática, Software Engineering, Full Stack Developer, Universidad de Alicante, Computer Science" />
+  <meta name="author" content="Álvaro Andrés De Lamo" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://aadl6-ua.github.io/">
-    <meta property="twitter:title" content="Álvaro Andrés De Lamo - Software Engineering Student">
-    <meta property="twitter:description" content="Estudiante de Ingeniería Informática especializado en Ingeniería del Software. Experiencia internacional en desarrollo full stack, machine learning y análisis de datos.">
-    <meta property="twitter:image" content="https://aadl6-ua.github.io/assets/profile-preview.jpg">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aadl6-ua.github.io/" />
+  <meta property="og:title" content="Álvaro Andrés De Lamo - Software Engineering Student" />
+  <meta property="og:description" content="Estudiante de Ingeniería Informática especializado en Ingeniería del Software. Experiencia internacional en desarrollo full stack, machine learning y análisis de datos." />
+  <meta property="og:image" content="https://aadl6-ua.github.io/assets/profile-preview.jpg" />
 
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Álvaro Andrés De Lamo",
-        "alternateName": "Alvaro Andres De Lamo",
-        "url": "https://aadl6-ua.github.io",
-        "image": "https://aadl6-ua.github.io/assets/profile.jpg",
-        "sameAs": [
-            "https://www.linkedin.com/in/alvaro-andres-de-lamo-50149b358",
-            "https://github.com/aadl6-ua"
-        ],
-        "jobTitle": "Computer Science Student",
-        "worksFor": {
-            "@type": "EducationalOrganization",
-            "name": "Universidad de Alicante"
-        },
-        "alumniOf": [
-            {
-                "@type": "EducationalOrganization",
-                "name": "Universidad de Alicante"
-            },
-            {
-                "@type": "EducationalOrganization",
-                "name": "University of Silesia"
-            },
-            {
-                "@type": "EducationalOrganization",
-                "name": "Chestnut Hill College"
-            }
-        ]
-    }
-    </script>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://aadl6-ua.github.io/" />
+  <meta property="twitter:title" content="Álvaro Andrés De Lamo - Software Engineering Student" />
+  <meta property="twitter:description" content="Estudiante de Ingeniería Informática especializado en Ingeniería del Software. Experiencia internacional en desarrollo full stack, machine learning y análisis de datos." />
+  <meta property="twitter:image" content="https://aadl6-ua.github.io/assets/profile-preview.jpg" />
 
-    <!-- Devicon for technology icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Álvaro Andrés De Lamo",
+    "alternateName": "Alvaro Andres De Lamo",
+    "url": "https://aadl6-ua.github.io",
+    "image": "https://aadl6-ua.github.io/assets/profile.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/alvaro-andres-de-lamo-50149b358",
+      "https://github.com/aadl6-ua"
+    ],
+    "jobTitle": "Computer Science Student",
+    "worksFor": { "@type": "EducationalOrganization", "name": "Universidad de Alicante" },
+    "alumniOf": [
+      { "@type": "EducationalOrganization", "name": "Universidad de Alicante" },
+      { "@type": "EducationalOrganization", "name": "University of Silesia" },
+      { "@type": "EducationalOrganization", "name": "Chestnut Hill College" }
+    ]
+  }
+  </script>
 
-    <title>Álvaro Andrés De Lamo | Software Engineering Student</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Álvaro Andrés De Lamo | Software Engineering Student</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo">AAD</a>
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link" data-i18n-key="nav-about">Sobre mí</a></li>
-                <li><a href="#skills" class="nav-link" data-i18n-key="nav-skills">Aptitudes</a></li>
-                <li><a href="#technologies" class="nav-link" data-i18n-key="nav-tech">Tecnologías</a></li>
-                <li><a href="#education" class="nav-link" data-i18n-key="nav-education">Educación</a></li>
-                <li><a href="#projects" class="nav-link" data-i18n-key="nav-projects">Proyectos</a></li>
-                <li><a href="#contact" class="nav-link" data-i18n-key="nav-contact">Contacto</a></li>
-            </ul>
-            <div class="controls">
-                <button class="btn-icon" id="themeToggle" aria-label="Toggle theme">
-                    <span id="themeIcon">🌙</span>
-                </button>
-                <div class="lang-toggle" aria-label="Language toggle" role="group">
-                    <button class="lang-btn" id="langBtnEs" data-lang="es">ES</button>
-                    <button class="lang-btn" id="langBtnEn" data-lang="en">EN</button>
-                </div>
+  <header>
+    <nav>
+      <a href="#" class="logo">AAD</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-i18n-key="nav-about">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n-key="nav-skills">Aptitudes</a></li>
+        <li><a href="#technologies" class="nav-link" data-i18n-key="nav-tech">Tecnologías</a></li>
+        <li><a href="#education" class="nav-link" data-i18n-key="nav-education">Educación</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n-key="nav-projects">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n-key="nav-contact">Contacto</a></li>
+      </ul>
+      <div class="controls">
+        <button class="btn-icon" id="themeToggle" aria-label="Toggle theme">
+          <span id="themeIcon"></span>
+        </button>
+        <div class="lang-toggle" aria-label="Language toggle" role="group">
+          <button class="lang-btn" id="langBtnEs" data-lang="es">ES</button>
+          <button class="lang-btn" id="langBtnEn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <img src="assets/img/profile.jpg" alt="Álvaro Andrés De Lamo" class="profile-image" />
+        <h1 data-i18n-key="hero-name">Álvaro Andrés De Lamo</h1>
+        <p class="subtitle" data-i18n-key="hero-title">Estudiante en Universidad de Alicante</p>
+        <p class="location" data-i18n-key="hero-location">📍 Alicante/Alacant, España</p>
+        <p class="description" data-i18n-key="hero-description">
+          Estudiante avanzado de Ingeniería Informática con especialización en Ingeniería del Software.
+          Experiencia internacional en Polonia y USA en desarrollo de software, full stack, análisis de datos
+          y machine learning. Apasionado por la resolución de problemas complejos y el desarrollo de soluciones
+          tecnológicas innovadoras.
+        </p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary" data-i18n-key="hero-contact">📧 Contacto</a>
+          <a href="https://www.linkedin.com/in/alvaro-andres-de-lamo-50149b358" target="_blank" class="btn btn-secondary">💼 LinkedIn</a>
+          <a href="https://github.com/aadl6-ua" target="_blank" class="btn btn-secondary">💻 GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="about-title">Sobre mí</h2>
+        <div class="coming-soon">
+          <div class="coming-soon-icon">👨‍💻</div>
+          <h3 data-i18n-key="about-heading">Ingeniero de Software en formación</h3>
+          <p data-i18n-key="about-text">
+            Con experiencia académica internacional y pasión por el desarrollo de soluciones tecnológicas innovadoras.
+            Mi formación combina conocimientos teóricos sólidos con experiencia práctica en entornos multiculturales y
+            académicamente exigentes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="skills-title">Aptitudes Principales</h2>
+        <div class="skills-grid">
+          <div class="skill-card"><div class="skill-icon">🏗️</div><h3>Software Engineering</h3></div>
+          <div class="skill-card"><div class="skill-icon">🌐</div><h3>Full Stack Development</h3></div>
+          <div class="skill-card"><div class="skill-icon">💻</div><h3>Programming</h3></div>
+          <div class="skill-card"><div class="skill-icon">📊</div><h3 data-i18n-key="skill-ds">Data Structures & Algorithms</h3></div>
+          <div class="skill-card"><div class="skill-icon">🗄️</div><h3 data-i18n-key="skill-db">Databases</h3></div>
+          <div class="skill-card"><div class="skill-icon">🔌</div><h3 data-i18n-key="skill-networks">Computer Networks</h3></div>
+          <div class="skill-card"><div class="skill-icon">🤖</div><h3>Machine Learning</h3></div>
+          <div class="skill-card"><div class="skill-icon">📈</div><h3 data-i18n-key="skill-data">Data Analysis</h3></div>
+          <div class="skill-card"><div class="skill-icon">📱</div><h3 data-i18n-key="skill-mobile">Mobile App Development</h3></div>
+          <div class="skill-card"><div class="skill-icon">🌍</div><h3 data-i18n-key="skill-web">Web Development</h3></div>
+          <div class="skill-card"><div class="skill-icon">⚙️</div><h3 data-i18n-key="skill-os">Operating Systems</h3></div>
+          <div class="skill-card"><div class="skill-icon">🔐</div><h3 data-i18n-key="skill-crypto">Applied Cryptography</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies (chips) -->
+    <section id="technologies">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="tech-title">Tecnologías</h2>
+        <div class="tech-categories">
+          <div class="tech-category">
+            <h3 data-i18n-key="tech-frontend">Frontend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Flutter</span>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="profile-image">👤</div>
-                <h1 data-i18n-key="hero-name">Álvaro Andrés De Lamo</h1>
-                <p class="subtitle" data-i18n-key="hero-title">Estudiante en Universidad de Alicante</p>
-                <p class="location" data-i18n-key="hero-location">📍 Alicante/Alacant, España</p>
-                <p class="description" data-i18n-key="hero-description">
-                    Estudiante avanzado de Ingeniería Informática con especialización en Ingeniería del Software. 
-                    Experiencia internacional en Polonia y USA en desarrollo de software, full stack, análisis de datos 
-                    y machine learning. Apasionado por la resolución de problemas complejos y el desarrollo de soluciones 
-                    tecnológicas innovadoras.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary" data-i18n-key="hero-contact">📧 Contacto</a>
-                    <a href="https://www.linkedin.com/in/alvaro-andres-de-lamo-50149b358" target="_blank" class="btn btn-secondary">💼 LinkedIn</a>
-                    <a href="https://github.com/aadl6-ua" target="_blank" class="btn btn-secondary">💻 GitHub</a>
-                </div>
+          </div>
+          <div class="tech-category">
+            <h3 data-i18n-key="tech-backend">Backend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Spring Boot</span>
             </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title" data-i18n-key="about-title">Sobre mí</h2>
-                <div class="coming-soon">
-                    <div class="coming-soon-icon">👨‍💻</div>
-                    <h3 data-i18n-key="about-heading">Ingeniero de Software en formación</h3>
-                    <p data-i18n-key="about-text">
-                        Con experiencia académica internacional y pasión por el desarrollo de soluciones tecnológicas 
-                        innovadoras. Mi formación combina conocimientos teóricos sólidos con experiencia práctica en 
-                        entornos multiculturales y académicamente exigentes.
-                    </p>
-                </div>
+          </div>
+          <div class="tech-category">
+            <h3 data-i18n-key="tech-databases">Bases de Datos</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Firebase</span>
             </div>
-        </section>
-
-        <section id="skills">
-            <div class="container">
-                <h2 class="section-title" data-i18n-key="skills-title">Aptitudes Principales</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">🏗️</div>
-                        <h3>Software Engineering</h3>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🌐</div>
-                        <h3>Full Stack Development</h3>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">💻</div>
-                        <h3>Programming</h3>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">📊</div>
-                        <h3 data-i18n-key="skill-ds">Data Structures & Algorithms</h3>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🗄️</div>
-                        <script src="assets/js/main.js"></script>
-                    <div class="language-card">
-                        <div class="language-flag">🇪🇸</div>
-                        <h3 data-i18n-key="lang-spanish">Español</h3>
-                        <p class="language-level" data-i18n-key="lang-native">Nativo</p>
-                    </div>
-                    <div class="language-card">
-                        <div class="language-flag">🇬🇧</div>
-                        <h3 data-i18n-key="lang-english">Inglés</h3>
-                        <p class="language-level" data-i18n-key="lang-professional">Full Professional</p>
-                    </div>
-                </div>
+          </div>
+          <div class="tech-category">
+            <h3 data-i18n-key="tech-tools">Herramientas & DevOps</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">VS Code</span>
+              <span class="tech-tag">IntelliJ IDEA</span>
+              <span class="tech-tag">Linux</span>
+              <span class="tech-tag">Postman</span>
             </div>
-        </section>
-
-        <section id="projects">
-            <div class="container">
-                <h2 class="section-title" data-i18n-key="projects-title">Proyectos</h2>
-                <div class="coming-soon">
-                    <div class="coming-soon-icon">🚀</div>
-                    <h3 data-i18n-key="projects-coming">Próximamente</h3>
-                    <p data-i18n-key="projects-description">
-                        Pronto compartiré aquí mis proyectos más destacados. Mantente al tanto para ver aplicaciones 
-                        full stack, proyectos de machine learning y mucho más.
-                    </p>
-                </div>
+          </div>
+          <div class="tech-category">
+            <h3 data-i18n-key="tech-other">Otros</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">GraphQL</span>
+              <span class="tech-tag">Agile/Scrum</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">scikit-learn</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title" data-i18n-key="contact-title">Contacto</h2>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <a href="mailto:alvaroandresdelamo@gmail.com">alvaroandresdelamo@gmail.com</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">💼</div>
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/alvaro-andres-de-lamo-50149b358" target="_blank">
-                            linkedin.com/in/alvaro-andres-de-lamo
-                        </a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">💻</div>
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/aadl6-ua" target="_blank">github.com/aadl6-ua</a>
-                    </div>
-                </div>
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="education-title">Educación</h2>
+        <div class="education-grid">
+          <!-- UA -->
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-info">
+                <h3>🇪🇸 Universidad de Alicante</h3>
+                <p class="education-degree" data-i18n-key="edu1-degree">Grado en Ingeniería Informática</p>
+                <p class="education-period" data-i18n-key="edu1-period">Septiembre 2022 - Enero 2027</p>
+              </div>
+              <button class="education-toggle" aria-label="Toggle details">+</button>
             </div>
-        </section>
-    </main>
+            <div class="education-details">
+              <p class="education-description" data-i18n-key="edu1-description">
+                Grado en Ingeniería Informática por la Universidad de Alicante, con sólida formación en programación,
+                estructuras de datos, sistemas operativos, bases de datos, redes de computadores, ingeniería del software
+                e inteligencia artificial. Incluye asignaturas avanzadas en gestión de proyectos informáticos, calidad y
+                especificación de software, sistemas inteligentes y modelado matemático, así como experiencias
+                internacionales mediante programas de intercambio académico en Europa y Estados Unidos.
+              </p>
+              <div class="education-note"><strong data-i18n-key="edu1-mention-label">Mención:</strong> <span data-i18n-key="edu1-mention">Ingeniería del Software</span></div>
+              <div class="education-skills">
+                <span class="skill-badge">Software Engineering</span>
+                <span class="skill-badge">Programming</span>
+                <span class="skill-badge">Data Structures & Algorithms</span>
+                <span class="skill-badge">Databases</span>
+                <span class="skill-badge">Full Stack Development</span>
+                <span class="skill-badge">Computer Networks</span>
+              </div>
+            </div>
+          </div>
 
-    <footer>
-        <p>&copy; 2026 Álvaro Andrés De Lamo. <span data-i18n-key="footer">Todos los derechos reservados.</span></p>
-    </footer>
+          <!-- Silesia -->
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-info">
+                <h3>🇵🇱 University of Silesia</h3>
+                <p class="education-degree" data-i18n-key="edu2-degree">Erasmus+ - Computer Science (Master level)</p>
+                <p class="education-period" data-i18n-key="edu2-period">Octubre 2024 - Febrero 2025</p>
+              </div>
+              <button class="education-toggle" aria-label="Toggle details">+</button>
+            </div>
+            <div class="education-details">
+              <p class="education-description" data-i18n-key="edu2-description">
+                Programa de intercambio Erasmus+ durante el Grado en Ingeniería Informática en la Universidad de Alicante.
+                Cursé asignaturas impartidas en inglés pertenecientes al Máster en Computer Science, con enfoque académico
+                y técnico en análisis de datos, aprendizaje automático, optimización y descubrimiento de conocimiento.
+                Formación desarrollada en un entorno internacional y multidisciplinar, fortaleciendo tanto competencias
+                técnicas como habilidades de trabajo en equipo y comunicación en inglés.
+              </p>
+              <div class="education-note"><strong data-i18n-key="edu2-note-label">Nota:</strong> <span data-i18n-key="edu2-note">Certificado académico oficial del programa</span></div>
+              <div class="education-skills">
+                <span class="skill-badge">Machine Learning</span>
+                <span class="skill-badge">Data Analysis</span>
+                <span class="skill-badge">Cluster Analysis</span>
+                <span class="skill-badge">Optimization Techniques</span>
+                <span class="skill-badge">Scientific Programming</span>
+                <span class="skill-badge">Managing IT Projects</span>
+              </div>
+            </div>
+          </div>
 
-    <script>
-        // Translations
-        const translations = {
-            es: {
-                'nav-about': 'Sobre mí',
-                'nav-skills': 'Aptitudes',
-                'nav-tech': 'Tecnologías',
-                'nav-education': 'Educación',
-                'nav-projects': 'Proyectos',
-                'nav-contact': 'Contacto',
-                'hero-title': 'Estudiante en Universidad de Alicante',
-                'hero-description': 'Estudiante avanzado de Ingeniería Informática con especialización en Ingeniería del Software. Experiencia internacional en Polonia y USA en desarrollo de software, full stack, análisis de datos y machine learning. Apasionado por la resolución de problemas complejos y el desarrollo de soluciones tecnológicas innovadoras.',
-                'hero-contact': '📧 Contacto',
-                'about-title': 'Sobre mí',
-                'about-heading': 'Ingeniero de Software en formación',
-                'about-text': 'Con experiencia académica internacional y pasión por el desarrollo de soluciones tecnológicas innovadoras. Mi formación combina conocimientos teóricos sólidos con experiencia práctica en entornos multiculturales y académicamente exigentes.',
-                'skills-title': 'Aptitudes Principales',
-                'skill-ds': 'Data Structures & Algorithms',
-                'skill-db': 'Bases de Datos',
-                'skill-networks': 'Redes de Computadores',
-                'skill-data': 'Análisis de Datos',
-                'skill-mobile': 'Desarrollo de Apps Móviles',
-                'skill-web': 'Desarrollo Web',
-                'skill-os': 'Sistemas Operativos',
-                'skill-crypto': 'Criptografía Aplicada',
-                'tech-title': 'Tecnologías',
-                'tech-frontend': 'Frontend',
-                'tech-backend': 'Backend',
-                'tech-databases': 'Bases de Datos',
-                'tech-tools': 'Herramientas & DevOps',
-                'tech-other': 'Otros',
-                'education-title': 'Educación',
-                'edu1-degree': 'Grado en Ingeniería Informática',
-                'edu1-period': 'Septiembre 2022 - Enero 2027',
-                'edu1-description': 'Grado en Ingeniería Informática por la Universidad de Alicante, con sólida formación en programación, estructuras de datos, sistemas operativos, bases de datos, redes de computadores, ingeniería del software e inteligencia artificial. Incluye asignaturas avanzadas en gestión de proyectos informáticos, calidad y especificación de software, sistemas inteligentes y modelado matemático, así como experiencias internacionales mediante programas de intercambio académico en Europa y Estados Unidos.',
-                'edu1-mention-label': 'Mención:',
-                'edu1-mention': 'Ingeniería del Software',
-                'edu2-degree': 'Erasmus+ - Computer Science (Nivel Máster)',
-                'edu2-period': 'Octubre 2024 - Febrero 2025',
-                'edu2-description': 'Programa de intercambio Erasmus+ durante el Grado en Ingeniería Informática en la Universidad de Alicante. Cursé asignaturas impartidas en inglés pertenecientes al Máster en Computer Science, con enfoque académico y técnico en análisis de datos, aprendizaje automático, optimización y descubrimiento de conocimiento. Formación desarrollada en un entorno internacional y multidisciplinar, fortaleciendo tanto competencias técnicas como habilidades de trabajo en equipo y comunicación en inglés.',
-                'edu2-note-label': 'Nota:',
-                'edu2-note': 'Certificado académico oficial del programa',
-                'edu3-degree': 'Intercambio Internacional - Computer Science',
-                'edu3-period': 'Agosto 2025 - Diciembre 2025',
-                'edu3-description': 'Programa de intercambio académico realizado durante el Grado en Ingeniería Informática en la Universidad de Alicante. Cursé asignaturas de nivel Bachelor impartidas íntegramente en inglés en Chestnut Hill College (Philadelphia, USA). Formación orientada a sistemas operativos, criptografía aplicada, desarrollo web y desarrollo de aplicaciones móviles, en un entorno académico estadounidense.',
-                'languages-title': 'Idiomas',
-                'lang-spanish': 'Español',
-                'lang-native': 'Nativo',
-                'lang-english': 'Inglés',
-                'lang-professional': 'Profesional Completo',
-                'projects-title': 'Proyectos',
-                'projects-coming': 'Próximamente',
-                'projects-description': 'Pronto compartiré aquí mis proyectos más destacados. Mantente al tanto para ver aplicaciones full stack, proyectos de machine learning y mucho más.',
-                'contact-title': 'Contacto',
-                'footer': 'Todos los derechos reservados.'
-            },
-            en: {
-                'nav-about': 'About',
-                'nav-skills': 'Skills',
-                'nav-tech': 'Technologies',
-                'nav-education': 'Education',
-                'nav-projects': 'Projects',
-                'nav-contact': 'Contact',
-                'hero-title': 'Student at Universidad de Alicante',
-                'hero-description': 'Advanced Computer Science student specializing in Software Engineering. International experience in Poland and USA in software development, full stack, data analysis and machine learning. Passionate about solving complex problems and developing innovative technological solutions.',
-                'hero-contact': '📧 Contact',
-                'about-title': 'About Me',
-                'about-heading': 'Software Engineer in Training',
-                'about-text': 'With international academic experience and passion for developing innovative technological solutions. My education combines solid theoretical knowledge with practical experience in multicultural and academically demanding environments.',
-                'skills-title': 'Core Skills',
-                'skill-ds': 'Data Structures & Algorithms',
-                'skill-db': 'Databases',
-                'skill-networks': 'Computer Networks',
-                'skill-data': 'Data Analysis',
-                'skill-mobile': 'Mobile App Development',
-                'skill-web': 'Web Development',
-                'skill-os': 'Operating Systems',
-                'skill-crypto': 'Applied Cryptography',
-                'tech-title': 'Technologies',
-                'tech-frontend': 'Frontend',
-                'tech-backend': 'Backend',
-                'tech-databases': 'Databases',
-                'tech-tools': 'Tools & DevOps',
-                'tech-other': 'Other',
-                'education-title': 'Education',
-                'edu1-degree': 'Bachelor in Computer Science',
-                'edu1-period': 'September 2022 - January 2027',
-                'edu1-description': 'Bachelor in Computer Science from Universidad de Alicante, with solid training in programming, data structures, operating systems, databases, computer networks, software engineering and artificial intelligence. Includes advanced courses in IT project management, software quality and specification, intelligent systems and mathematical modeling, as well as international experiences through academic exchange programs in Europe and the United States.',
-                'edu1-mention-label': 'Mention:',
-                'edu1-mention': 'Software Engineering',
-                'edu2-degree': 'Erasmus+ - Computer Science (Master level)',
-                'edu2-period': 'October 2024 - February 2025',
-                'edu2-description': 'Erasmus+ exchange program during the Computer Science degree at Universidad de Alicante. I took courses taught in English belonging to the Master in Computer Science, with academic and technical focus on data analysis, machine learning, optimization and knowledge discovery. Training developed in an international and multidisciplinary environment, strengthening both technical skills and teamwork and communication skills in English.',
-                'edu2-note-label': 'Note:',
-                'edu2-note': 'Official academic certificate of the program',
-                'edu3-degree': 'International Exchange - Computer Science',
-                'edu3-period': 'August 2025 - December 2025',
-                'edu3-description': 'Academic exchange program conducted during the Computer Science degree at Universidad de Alicante. I took Bachelor-level courses taught entirely in English at Chestnut Hill College (Philadelphia, USA). Training focused on operating systems, applied cryptography, web development and mobile application development, in an American academic environment.',
-                'languages-title': 'Languages',
-                'lang-spanish': 'Spanish',
-                'lang-native': 'Native',
-                'lang-english': 'English',
-                'lang-professional': 'Full Professional',
-                'projects-title': 'Projects',
-                'projects-coming': 'Coming Soon',
-                'projects-description': 'I will soon share my most notable projects here. Stay tuned to see full stack applications, machine learning projects and much more.',
-                'contact-title': 'Contact',
-                'footer': 'All rights reserved.'
-            }
-        };
+          <!-- Chestnut Hill College -->
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-info">
+                <h3>🇺🇸 Chestnut Hill College</h3>
+                <p class="education-degree" data-i18n-key="edu3-degree">International Exchange - Computer Science</p>
+                <p class="education-period" data-i18n-key="edu3-period">Agosto 2025 - Diciembre 2025</p>
+              </div>
+              <button class="education-toggle" aria-label="Toggle details">+</button>
+            </div>
+            <div class="education-details">
+              <p class="education-description" data-i18n-key="edu3-description">
+                Programa de intercambio académico realizado durante el Grado en Ingeniería Informática en la Universidad de
+                Alicante. Cursé asignaturas de nivel Bachelor impartidas íntegramente en inglés en Chestnut Hill College
+                (Philadelphia, USA). Formación orientada a sistemas operativos, criptografía aplicada, desarrollo web y
+                desarrollo de aplicaciones móviles, en un entorno académico estadounidense.
+              </p>
+              <div class="education-note"><strong>GPA:</strong> 4.0 / 4.0</div>
+              <div class="education-skills">
+                <span class="skill-badge">Mobile Application Development</span>
+                <span class="skill-badge">Web Development</span>
+                <span class="skill-badge">Operating Systems</span>
+                <span class="skill-badge">Applied Cryptography</span>
+                <span class="skill-badge">Computer Science Fundamentals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        // Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const htmlElement = document.documentElement;
+    <!-- Languages -->
+    <section id="languages">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="languages-title">Idiomas</h2>
+        <div class="languages-grid">
+          <div class="language-card">
+            <div class="language-flag">🇪🇸</div>
+            <h3 data-i18n-key="lang-spanish">Español</h3>
+            <p class="language-level" data-i18n-key="lang-native">Nativo</p>
+          </div>
+          <div class="language-card">
+            <div class="language-flag">🇬🇧</div>
+            <h3 data-i18n-key="lang-english">Inglés</h3>
+            <p class="language-level" data-i18n-key="lang-professional">Full Professional</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        // Load saved theme
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        htmlElement.setAttribute('data-theme', savedTheme);
-        themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="projects-title">Proyectos</h2>
+        <div class="coming-soon">
+          <div class="coming-soon-icon">🚀</div>
+          <h3 data-i18n-key="projects-coming">Próximamente</h3>
+          <p data-i18n-key="projects-description">
+            Pronto compartiré aquí mis proyectos más destacados. Mantente al tanto para ver aplicaciones
+            full stack, proyectos de machine learning y mucho más.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-        });
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n-key="contact-title">Contacto</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>Email</h3>
+            <a href="mailto:alvaroandresdelamo@gmail.com">alvaroandresdelamo@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/alvaro-andres-de-lamo-50149b358" target="_blank">linkedin.com/in/alvaro-andres-de-lamo</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">💻</div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/aadl6-ua" target="_blank">github.com/aadl6-ua</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        // Language Toggle
-        const langButtons = [document.getElementById('langBtnEs'), document.getElementById('langBtnEn')];
-        const savedLang = localStorage.getItem('language') || 'es';
-        
-        function setActiveLangButton(lang) {
-            langButtons.forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.lang === lang);
-            });
-        }
+  <footer>
+    <p>&copy; 2026 Álvaro Andrés De Lamo. <span data-i18n-key="footer">Todos los derechos reservados.</span></p>
+  </footer>
 
-        function updateLanguage(lang) {
-            document.querySelectorAll('[data-i18n-key]').forEach(element => {
-                const key = element.getAttribute('data-i18n-key');
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
-            document.documentElement.lang = lang;
-            localStorage.setItem('language', lang);
-            // Update document title for SEO
-            if (lang === 'es') {
-                document.title = 'Álvaro Andrés De Lamo | Estudiante de Ingeniería del Software';
-            } else {
-                document.title = 'Álvaro Andrés De Lamo | Software Engineering Student';
-            }
-            setActiveLangButton(lang);
-        }
-
-        updateLanguage(savedLang);
-
-        langButtons.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                updateLanguage(btn.dataset.lang);
-            });
-        });
-
-        // Education Cards Toggle
-        document.querySelectorAll('.education-card').forEach(card => {
-            const toggle = card.querySelector('.education-toggle');
-            toggle.addEventListener('click', (e) => {
-                e.stopPropagation();
-                card.classList.toggle('active');
-            });
-            
-            card.addEventListener('click', () => {
-                card.classList.toggle('active');
-            });
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.skill-card, .education-card, .contact-card, .language-card').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

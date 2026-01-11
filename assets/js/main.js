@@ -117,9 +117,19 @@ const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 const htmlElement = document.documentElement;
 
+const icons = {
+  sun: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="6"/></svg>',
+  moon: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 1021 12.79z"/></svg>'
+};
+
+function setThemeIcon(theme) {
+  if (!themeIcon) return;
+  themeIcon.innerHTML = theme === 'dark' ? icons.sun : icons.moon;
+}
+
 const savedTheme = localStorage.getItem('theme') || 'light';
 htmlElement.setAttribute('data-theme', savedTheme);
-if (themeIcon) themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+setThemeIcon(savedTheme);
 
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
@@ -127,7 +137,7 @@ if (themeToggle) {
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    if (themeIcon) themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    setThemeIcon(newTheme);
   });
 }
 
