@@ -112,14 +112,14 @@ const translations = {
   }
 };
 
-// Theme Toggle
+// Theme Toggle with subtle animation
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 const htmlElement = document.documentElement;
 
 const icons = {
-  sun: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="6"/></svg>',
-  moon: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 1021 12.79z"/></svg>'
+  sun: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor"><circle cx="12" cy="12" r="5"/><path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24M1 12h6m6 0h6m-16.78 7.78l4.24-4.24m5.08-5.08l4.24-4.24"/></svg>',
+  moon: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
 };
 
 function setThemeIcon(theme) {
@@ -138,6 +138,11 @@ if (themeToggle) {
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     setThemeIcon(newTheme);
+    // Subtle visual feedback
+    themeToggle.style.animation = 'none';
+    setTimeout(() => {
+      themeToggle.style.animation = '';
+    }, 10);
   });
 }
 
@@ -167,30 +172,46 @@ function updateLanguage(lang) {
 }
 
 updateLanguage(savedLang);
-langButtons.forEach(btn => { if (btn) btn.addEventListener('click', () => updateLanguage(btn.dataset.lang)); });
+langButtons.forEach(btn => { 
+  if (btn) btn.addEventListener('click', () => updateLanguage(btn.dataset.lang)); 
+});
 
-// Education Cards Toggle
+// Education Cards Toggle with smooth animation
 document.querySelectorAll('.education-card').forEach(card => {
   const toggle = card.querySelector('.education-toggle');
   if (toggle) {
-    toggle.addEventListener('click', (e) => { e.stopPropagation(); card.classList.toggle('active'); });
+    toggle.addEventListener('click', (e) => { 
+      e.stopPropagation(); 
+      card.classList.toggle('active'); 
+    });
   }
-  card.addEventListener('click', () => { card.classList.toggle('active'); });
+  card.addEventListener('click', () => { 
+    card.classList.toggle('active'); 
+  });
 });
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   });
 });
 
-// Fade-in animation on scroll
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+// Fade-in animation on scroll - More subtle
+const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -30px 0px' };
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('fade-in-up'); observer.unobserve(entry.target); } });
+  entries.forEach(entry => { 
+    if (entry.isIntersecting) { 
+      entry.target.classList.add('fade-in-up'); 
+      observer.unobserve(entry.target); 
+    } 
+  });
 }, observerOptions);
 
 document.querySelectorAll('.skill-card, .education-card, .contact-card, .language-card').forEach(el => observer.observe(el));
