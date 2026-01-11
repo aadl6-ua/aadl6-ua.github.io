@@ -30,7 +30,7 @@
   --text-tertiary: #6e7681;
   --accent-primary: #58a6ff;
   --accent-hover: #79c0ff;
-  --accent-light: #1f6feb;
+  --accent-light: #0d47a1;
   --border-color: #30363d;
   --border-light: #21262d;
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -391,11 +391,18 @@ section:nth-child(even) {
   box-shadow: var(--shadow-xs); 
   border: 1px solid var(--border-light); 
   transition: var(--transition-fast);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   white-space: nowrap;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+}
+.tech-tag i {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
 }
 .tech-tag::before {
   content: '';
@@ -446,6 +453,11 @@ section:nth-child(even) {
   align-items: flex-start; 
   gap: 1rem; 
 }
+.education-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .education-info h3 { 
   color: var(--text-primary); 
   font-size: 1.25rem; 
@@ -462,6 +474,26 @@ section:nth-child(even) {
 .education-period { 
   color: var(--text-tertiary); 
   font-size: 0.9rem;
+}
+.edu-logo {
+  width: 112px;
+  height: 112px;
+  max-width: 112px;
+  max-height: 112px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .education-toggle { 
   background: var(--accent-primary); 
@@ -511,14 +543,15 @@ section:nth-child(even) {
   padding: 0.5rem 1rem; 
   border-radius: 6px; 
   font-size: 0.85rem; 
-  font-weight: 500; 
+  font-weight: 600;
   border: 1px solid var(--accent-primary);
 }
 .education-note { 
   background: var(--bg-secondary); 
   padding: 1rem; 
   border-radius: 8px; 
-  margin-top: 1rem; 
+  margin-top: 1rem;
+  margin-bottom: 1.5rem; 
   border-left: 3px solid var(--accent-primary);
   font-size: 0.95rem;
 }
