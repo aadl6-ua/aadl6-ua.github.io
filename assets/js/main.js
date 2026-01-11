@@ -9,9 +9,9 @@ const translations = {
     'nav-contact': 'Contacto',
     'hero-name': 'Álvaro Andrés De Lamo',
     'hero-title': 'Estudiante en Universidad de Alicante',
-    'hero-location': '📍 Alicante/Alacant, España',
+    'hero-location': 'Alicante/Alacant, España',
     'hero-description': 'Estudiante avanzado de Ingeniería Informática con especialización en Ingeniería del Software. Experiencia internacional en Polonia y USA en desarrollo de software, full stack, análisis de datos y machine learning. Apasionado por la resolución de problemas complejos y el desarrollo de soluciones tecnológicas innovadoras.',
-    'hero-contact': '📧 Contacto',
+    'hero-contact': 'Contacto',
     'about-title': 'Sobre mí',
     'about-heading': 'Ingeniero de Software en formación',
     'about-text': 'Con experiencia académica internacional y pasión por el desarrollo de soluciones tecnológicas innovadoras. Mi formación combina conocimientos teóricos sólidos con experiencia práctica en entornos multiculturales y académicamente exigentes.',
@@ -64,9 +64,9 @@ const translations = {
     'nav-contact': 'Contact',
     'hero-name': 'Álvaro Andrés De Lamo',
     'hero-title': 'Student at Universidad de Alicante',
-    'hero-location': '📍 Alicante/Alacant, Spain',
+    'hero-location': 'Alicante/Alacant, Spain',
     'hero-description': 'Advanced Computer Science student specializing in Software Engineering. International experience in Poland and USA in software development, full stack, data analysis and machine learning. Passionate about solving complex problems and developing innovative technological solutions.',
-    'hero-contact': '📧 Contact',
+    'hero-contact': 'Contact',
     'about-title': 'About Me',
     'about-heading': 'Software Engineer in Training',
     'about-text': 'With international academic experience and passion for developing innovative technological solutions. My education combines solid theoretical knowledge with practical experience in multicultural and academically demanding environments.',
@@ -215,3 +215,23 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 document.querySelectorAll('.skill-card, .education-card, .contact-card, .language-card').forEach(el => observer.observe(el));
+
+// Perfect grid layout for skills (no empty spaces)
+function setOptimalSkillsGrid() {
+  const skillsGrid = document.querySelector('.skills-grid');
+  if (!skillsGrid) return;
+  
+  const skillCards = skillsGrid.querySelectorAll('.skill-card');
+  // Responsive columns: desktop 4, laptop/tablet 3, mobile 1
+  if (window.innerWidth <= 768) {
+    skillsGrid.style.gridTemplateColumns = '1fr';
+  } else if (window.innerWidth <= 1200) {
+    skillsGrid.style.gridTemplateColumns = 'repeat(3, 1fr)';
+  } else {
+    skillsGrid.style.gridTemplateColumns = 'repeat(4, 1fr)';
+  }
+}
+
+// Call on load and resize
+setOptimalSkillsGrid();
+window.addEventListener('resize', setOptimalSkillsGrid);
