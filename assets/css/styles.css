@@ -308,7 +308,7 @@ section:nth-child(even) {
 /* Skills */
 .skills-grid { 
   display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  grid-template-columns: repeat(4, 1fr); 
   gap: 1.5rem; 
   max-width: 1100px; 
   margin: 0 auto;
@@ -348,8 +348,11 @@ section:nth-child(even) {
   border-color: var(--accent-light);
 }
 .skill-icon { 
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-primary);
 }
 .skill-card h3 { 
   color: var(--text-primary); 
@@ -583,10 +586,19 @@ section:nth-child(even) {
   border-color: var(--accent-light);
 }
 .contact-icon { 
-  font-size: 2.75rem; 
+  font-size: 1.8rem; 
   color: var(--accent-primary); 
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  background: var(--bg-secondary);
 }
 .contact-card h3 { 
   color: var(--text-primary); 
@@ -630,9 +642,13 @@ section:nth-child(even) {
   border-color: var(--accent-light);
 }
 .language-flag { 
-  font-size: 3.5rem; 
-  margin-bottom: 1rem;
+  font-size: 2.5rem; 
+  margin: 0 auto 1rem;
   line-height: 1;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
 }
 .language-card h3 { 
   color: var(--text-primary); 
@@ -659,9 +675,12 @@ section:nth-child(even) {
   border: 1px solid var(--border-light);
 }
 .coming-soon-icon { 
-  font-size: 4.5rem; 
-  margin-bottom: 1.5rem;
+  font-size: 3rem; 
+  margin-bottom: 1.25rem;
   line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-primary);
 }
 .coming-soon h3 { 
   font-size: 1.75rem; 
@@ -697,7 +716,7 @@ footer p {
   .hero .subtitle { font-size: 1.25rem; }
   .profile-image { width: 140px; height: 140px; }
   .section-title { font-size: 2rem; margin-bottom: 2.5rem; }
-  .skills-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
+  .skills-grid { gap: 1rem; }
   .skill-card { padding: 1.5rem 1.25rem; }
   .education-header { flex-direction: column; }
   section { padding: 4rem 2rem; }
@@ -715,7 +734,7 @@ footer p {
   .cta-buttons { gap: 0.75rem; }
   .btn { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
   .section-title { font-size: 1.5rem; margin-bottom: 1.75rem; }
-  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr !important; }
   .tech-tags { gap: 0.625rem; }
   .tech-tag { padding: 0.5rem 1rem; font-size: 0.85rem; }
 }
