@@ -1,3 +1,11 @@
-theme: jekyll-theme-cayman
-title: "Álvaro Andrés"
-description: "Personal site"
+title: "Álvaro Andrés De Lamo | Software Engineering Student"
+description: "Estudiante de Ingeniería Informática en la Universidad de Alicante. Especialización en Ingeniería del Software con experiencia internacional en Polonia y USA. Full Stack Developer, Machine Learning, Data Analysis."
+author: "Álvaro Andrés De Lamo"
+keywords: "Álvaro Andrés De Lamo, Alvaro Andres De Lamo, Software Engineering, Full Stack Developer, Computer Science, Universidad de Alicante, Machine Learning"
+url: "https://aadl6-ua.github.io"
+github_username: aadl6-ua
+linkedin_username: alvaro-andres-de-lamo-50149b358
+
+# SEO
+lang: es_ES
+timezone: Europe/Madrid
