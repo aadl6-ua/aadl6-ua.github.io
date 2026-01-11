@@ -120,9 +120,9 @@ nav {
 .btn-icon { 
   background: var(--bg-secondary);
   border: 1px solid var(--border-color); 
-  width: 40px; 
-  height: 40px; 
-  border-radius: 8px; 
+  width: 36px; 
+  height: 36px; 
+  border-radius: 6px; 
   cursor: pointer; 
   display: flex; 
   align-items: center; 
@@ -149,12 +149,12 @@ nav {
   background: transparent;
   border: none; 
   color: var(--text-secondary); 
-  width: 40px; 
-  height: 40px; 
+  width: 36px; 
+  height: 36px; 
   border-radius: 4px; 
   cursor: pointer; 
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: var(--transition-fast); 
   display: inline-flex; 
   align-items: center; 
@@ -604,6 +604,7 @@ section:nth-child(even) {
   gap: 2rem; 
   max-width: 1100px; 
   margin: 0 auto;
+  justify-items: center;
 }
 .contact-card { 
   background: var(--bg-card); 
@@ -613,6 +614,8 @@ section:nth-child(even) {
   box-shadow: var(--shadow-sm); 
   border: 1px solid var(--border-light); 
   transition: var(--transition);
+  width: 100%;
+  max-width: 400px;
 }
 .contact-card:hover { 
   transform: translateY(-4px); 
@@ -821,15 +824,13 @@ footer p {
   
   /* Education edge-to-edge en móvil pequeño */
   #education .container {
-    padding: 0;
+    padding: 0 1rem;
   }
   .education-grid {
     gap: 1.5rem;
   }
   .education-card {
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+    border-radius: 12px;
     padding: 1.25rem 1.5rem;
   }
   .education-info h3 {
@@ -845,12 +846,8 @@ footer p {
     padding: 6px;
   }
   .education-note {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+    padding: 0.75rem;
+    border-radius: 8px;
   }
   .transcript-link {
     padding: 0.625rem 1rem;
