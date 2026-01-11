@@ -55,9 +55,9 @@
       <a href="#" class="logo">AAD</a>
       <ul class="nav-links">
         <li><a href="#about" class="nav-link" data-i18n-key="nav-about">Sobre mí</a></li>
+        <li><a href="#education" class="nav-link" data-i18n-key="nav-education">Educación</a></li>
         <li><a href="#skills" class="nav-link" data-i18n-key="nav-skills">Aptitudes</a></li>
         <li><a href="#technologies" class="nav-link" data-i18n-key="nav-tech">Tecnologías</a></li>
-        <li><a href="#education" class="nav-link" data-i18n-key="nav-education">Educación</a></li>
         <li><a href="#projects" class="nav-link" data-i18n-key="nav-projects">Proyectos</a></li>
         <li><a href="#contact" class="nav-link" data-i18n-key="nav-contact">Contacto</a></li>
       </ul>
@@ -74,18 +74,18 @@
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero">
+    <!-- Hero / About -->
+    <section class="hero" id="about">
       <div class="hero-content">
         <img src="assets/img/pfp.jpeg" alt="Álvaro Andrés De Lamo" class="profile-image" />
         <h1 data-i18n-key="hero-name">Álvaro Andrés De Lamo</h1>
-        <p class="subtitle" data-i18n-key="hero-title">Estudiante en Universidad de Alicante</p>
+        <p class="subtitle" data-i18n-key="hero-title">Estudiante de Ingeniería Informática</p>
         <p class="location" data-i18n-key="hero-location">Alicante/Alacant, España</p>
         <p class="description" data-i18n-key="hero-description">
-          Estudiante avanzado de Ingeniería Informática con especialización en Ingeniería del Software.
-          Experiencia internacional en Polonia y USA en desarrollo de software, full stack, análisis de datos
-          y machine learning. Apasionado por la resolución de problemas complejos y el desarrollo de soluciones
-          tecnológicas innovadoras.
+          Estudiante avanzado de Ingeniería Informática especializado en Ingeniería del Software, con experiencia
+          internacional en Polonia y USA en desarrollo de software, full stack, análisis de datos y machine learning.
+          Con formación académica internacional y pasión por soluciones tecnológicas innovadoras, combino base teórica
+          sólida con práctica en entornos multiculturales y exigentes para resolver problemas complejos.
         </p>
         <div class="cta-buttons">
           <a href="#contact" class="btn btn-primary" data-i18n-key="hero-contact">Contacto</a>
@@ -94,19 +94,104 @@
         </div>
       </div>
     </section>
-
-    <!-- About -->
-    <section id="about">
+    <!-- Education -->
+    <section id="education">
       <div class="container">
-        <h2 class="section-title" data-i18n-key="about-title">Sobre mí</h2>
-        <div class="coming-soon">
-          <div class="coming-soon-icon"><i class="fa-solid fa-briefcase"></i></div>
-          <h3 data-i18n-key="about-heading">Ingeniero de Software en formación</h3>
-          <p data-i18n-key="about-text">
-            Con experiencia académica internacional y pasión por el desarrollo de soluciones tecnológicas innovadoras.
-            Mi formación combina conocimientos teóricos sólidos con experiencia práctica en entornos multiculturales y
-            académicamente exigentes.
-          </p>
+        <h2 class="section-title" data-i18n-key="education-title">Educación</h2>
+        <div class="education-grid">
+          <!-- UA -->
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-info">
+                <div class="edu-logo">
+                  <img src="assets/img/universidad-de-alicante-1.svg" alt="Universidad de Alicante logo" />
+                </div>
+                <div>
+                  <h3>UA - Universidad de Alicante / Universitat d'Alacant 🇪🇸</h3>
+                  <p class="education-degree" data-i18n-key="edu1-degree">Bachelor's Degree in Computer Engineering</p>
+                  <p class="education-period" data-i18n-key="edu1-period">Septiembre 2022 - Enero 2027</p>
+                </div>
+              </div>
+              <button class="education-toggle" aria-label="Toggle details">+</button>
+            </div>
+            <div class="education-details">
+              <div class="education-note"><strong data-i18n-key="edu1-mention-label">Note:</strong> <span data-i18n-key="edu1-mention">Specialization in Software Engineering</span></div>
+              <p class="education-description" data-i18n-key="edu1-description">
+                Bachelor's Degree in Computer Engineering from the University of Alicante, with a strong foundation in programming, data structures, operating systems, databases, computer networks and software engineering. The curriculum includes advanced courses in IT project management, software quality and specification, intelligent systems, and mathematical modeling, as well as international experience through academic exchange programs in Europe and the United States.
+              </p>
+              <div class="education-skills">
+                <span class="skill-badge">Software Engineering</span>
+                <span class="skill-badge">Programming</span>
+                <span class="skill-badge">Data Structures & Algorithms</span>
+                <span class="skill-badge">Databases</span>
+                <span class="skill-badge">Full Stack Development</span>
+                <span class="skill-badge">Computer Networks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Silesia -->
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-info">
+                <div class="edu-logo">
+                  <img src="assets/img/university-of-silesia.png.avif" alt="University of Silesia logo" />
+                </div>
+                <div>
+                  <h3>Uniwersytet Śląski w Katowicach 🇵🇱</h3>
+                  <p class="education-degree" data-i18n-key="edu2-degree">Erasmus+ Exchange Student - Computer Engineering (Master-level courses)</p>
+                  <p class="education-period" data-i18n-key="edu2-period">Octubre 2024 - Febrero 2025</p>
+                </div>
+              </div>
+              <button class="education-toggle" aria-label="Toggle details">+</button>
+            </div>
+            <div class="education-details">
+              <div class="education-note"><strong data-i18n-key="edu2-note-label">Note:</strong> <span data-i18n-key="edu2-note-prefix">Programme</span> - <a href="https://informator.us.edu.pl/programmes/list/all/IN/W4-S2INA19.2022/" target="_blank" rel="noopener noreferrer">https://informator.us.edu.pl/programmes/list/all/IN/W4-S2INA19.2022/</a></div>
+              <p class="education-description" data-i18n-key="edu2-description">
+                Erasmus+ exchange program completed during the Bachelor's Degree in Computer Engineering at the University of Alicante. Attended courses taught in English from the Master's program in Computer Science (second-cycle studies), with an academic and technical focus on data analysis, machine learning, optimization, and knowledge discovery. Training conducted in an international and multidisciplinary environment, enhancing both technical skills and teamwork and communication abilities in English.
+              </p>
+              <a href="assets/pdf/UStranscript.pdf" target="_blank" rel="noopener noreferrer" class="transcript-link" data-i18n-key="edu2-transcript"><i class="fa-solid fa-file-pdf"></i> Transcript</a>
+              <div class="education-skills">
+                <span class="skill-badge">Machine Learning</span>
+                <span class="skill-badge">Data Analysis</span>
+                <span class="skill-badge">Cluster Analysis</span>
+                <span class="skill-badge">Optimization Techniques</span>
+                <span class="skill-badge">Scientific Programming</span>
+                <span class="skill-badge">Managing IT projects and teams</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chestnut Hill College -->
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-info">
+                <div class="edu-logo">
+                  <img src="assets/img/chestnut-hill-college.png" alt="Chestnut Hill College logo" />
+                </div>
+                <div>
+                  <h3>Chestnut Hill College 🇺🇸</h3>
+                  <p class="education-degree" data-i18n-key="edu3-degree">Exchange Student – Computer Science (Undergraduate level)</p>
+                  <p class="education-period" data-i18n-key="edu3-period">Agosto 2025 - Diciembre 2025</p>
+                </div>
+              </div>
+              <button class="education-toggle" aria-label="Toggle details">+</button>
+            </div>
+            <div class="education-details">
+              <div class="education-note"><strong data-i18n-key="edu3-note-label">Note:</strong> <span data-i18n-key="edu3-note">Relevant academic programmes: CMTC, CSEC, CMSC</span></div>
+              <p class="education-description" data-i18n-key="edu3-description">
+                Academic exchange program completed during the Bachelor's Degree in Computer Engineering at the University of Alicante. Attended undergraduate-level Computer Science courses taught entirely in English at Chestnut Hill College (Philadelphia, USA). Coursework focused on operating systems, applied cryptography, web development, and mobile application development in a U.S. academic environment. Academic performance: GPA 4.0 / 4.0.
+              </p>
+              <a href="assets/pdf/CHCtranscript.pdf" target="_blank" rel="noopener noreferrer" class="transcript-link" data-i18n-key="edu3-transcript"><i class="fa-solid fa-file-pdf"></i> Transcript</a>
+              <div class="education-skills">
+                <span class="skill-badge">Mobile Application Development</span>
+                <span class="skill-badge">Web Development</span>
+                <span class="skill-badge">Operating Systems</span>
+                <span class="skill-badge">Applied Cryptography</span>
+                <span class="skill-badge">Computer Science Fundamentals</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -198,136 +283,6 @@
               <span class="tech-tag"><i class="devicon-python-plain"></i> Pandas</span>
               <span class="tech-tag"><i class="devicon-python-plain"></i> NumPy</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-      <div class="container">
-        <h2 class="section-title" data-i18n-key="education-title">Educación</h2>
-        <div class="education-grid">
-          <!-- UA -->
-          <div class="education-card">
-            <div class="education-header">
-              <div class="education-info">
-                <div class="edu-logo">
-                  <img src="assets/img/universidad-de-alicante-1.svg" alt="Universidad de Alicante logo" />
-                </div>
-                <div>
-                  <h3>Universidad de Alicante 🇪🇸</h3>
-                  <p class="education-degree" data-i18n-key="edu1-degree">Grado en Ingeniería Informática</p>
-                  <p class="education-period" data-i18n-key="edu1-period">Septiembre 2022 - Enero 2027</p>
-                </div>
-              </div>
-              <button class="education-toggle" aria-label="Toggle details">+</button>
-            </div>
-            <div class="education-details">
-              <p class="education-description" data-i18n-key="edu1-description">
-                Grado en Ingeniería Informática por la Universidad de Alicante, con sólida formación en programación,
-                estructuras de datos, sistemas operativos, bases de datos, redes de computadores, ingeniería del software
-                e inteligencia artificial. Incluye asignaturas avanzadas en gestión de proyectos informáticos, calidad y
-                especificación de software, sistemas inteligentes y modelado matemático, así como experiencias
-                internacionales mediante programas de intercambio académico en Europa y Estados Unidos.
-              </p>
-              <div class="education-note"><strong data-i18n-key="edu1-mention-label">Mención:</strong> <span data-i18n-key="edu1-mention">Ingeniería del Software</span></div>
-              <div class="education-skills">
-                <span class="skill-badge">Software Engineering</span>
-                <span class="skill-badge">Programming</span>
-                <span class="skill-badge">Data Structures & Algorithms</span>
-                <span class="skill-badge">Databases</span>
-                <span class="skill-badge">Full Stack Development</span>
-                <span class="skill-badge">Computer Networks</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Silesia -->
-          <div class="education-card">
-            <div class="education-header">
-              <div class="education-info">
-                <div class="edu-logo">
-                  <img src="assets/img/university-of-silesia.png.avif" alt="University of Silesia logo" />
-                </div>
-                <div>
-                  <h3>University of Silesia 🇵🇱</h3>
-                  <p class="education-degree" data-i18n-key="edu2-degree">Erasmus+ - Computer Science (Master level)</p>
-                  <p class="education-period" data-i18n-key="edu2-period">Octubre 2024 - Febrero 2025</p>
-                </div>
-              </div>
-              <button class="education-toggle" aria-label="Toggle details">+</button>
-            </div>
-            <div class="education-details">
-              <p class="education-description" data-i18n-key="edu2-description">
-                Programa de intercambio Erasmus+ durante el Grado en Ingeniería Informática en la Universidad de Alicante.
-                Cursé asignaturas impartidas en inglés pertenecientes al Máster en Computer Science, con enfoque académico
-                y técnico en análisis de datos, aprendizaje automático, optimización y descubrimiento de conocimiento.
-                Formación desarrollada en un entorno internacional y multidisciplinar, fortaleciendo tanto competencias
-                técnicas como habilidades de trabajo en equipo y comunicación en inglés.
-              </p>
-              <div class="education-note"><strong data-i18n-key="edu2-note-label">Nota:</strong> <span data-i18n-key="edu2-note">Certificado académico oficial del programa</span></div>
-              <div class="education-skills">
-                <span class="skill-badge">Machine Learning</span>
-                <span class="skill-badge">Data Analysis</span>
-                <span class="skill-badge">Cluster Analysis</span>
-                <span class="skill-badge">Optimization Techniques</span>
-                <span class="skill-badge">Scientific Programming</span>
-                <span class="skill-badge">Managing IT Projects</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Chestnut Hill College -->
-          <div class="education-card">
-            <div class="education-header">
-              <div class="education-info">
-                <div class="edu-logo">
-                  <img src="assets/img/chestnut-hill-college.png" alt="Chestnut Hill College logo" />
-                </div>
-                <div>
-                  <h3>Chestnut Hill College 🇺🇸</h3>
-                  <p class="education-degree" data-i18n-key="edu3-degree">International Exchange - Computer Science</p>
-                  <p class="education-period" data-i18n-key="edu3-period">Agosto 2025 - Diciembre 2025</p>
-                </div>
-              </div>
-              <button class="education-toggle" aria-label="Toggle details">+</button>
-            </div>
-            <div class="education-details">
-              <p class="education-description" data-i18n-key="edu3-description">
-                Programa de intercambio académico realizado durante el Grado en Ingeniería Informática en la Universidad de
-                Alicante. Cursé asignaturas de nivel Bachelor impartidas íntegramente en inglés en Chestnut Hill College
-                (Philadelphia, USA). Formación orientada a sistemas operativos, criptografía aplicada, desarrollo web y
-                desarrollo de aplicaciones móviles, en un entorno académico estadounidense.
-              </p>
-              <div class="education-note"><strong>GPA:</strong> 4.0 / 4.0</div>
-              <div class="education-skills">
-                <span class="skill-badge">Mobile Application Development</span>
-                <span class="skill-badge">Web Development</span>
-                <span class="skill-badge">Operating Systems</span>
-                <span class="skill-badge">Applied Cryptography</span>
-                <span class="skill-badge">Computer Science Fundamentals</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Languages -->
-    <section id="languages">
-      <div class="container">
-        <h2 class="section-title" data-i18n-key="languages-title">Idiomas</h2>
-        <div class="languages-grid">
-          <div class="language-card">
-            <div class="language-flag">🇪🇸</div>
-            <h3 data-i18n-key="lang-spanish">Español</h3>
-            <p class="language-level" data-i18n-key="lang-native">Nativo</p>
-          </div>
-          <div class="language-card">
-            <div class="language-flag">🇬🇧</div>
-            <h3 data-i18n-key="lang-english">Inglés</h3>
-            <p class="language-level" data-i18n-key="lang-professional">Full Professional</p>
           </div>
         </div>
       </div>

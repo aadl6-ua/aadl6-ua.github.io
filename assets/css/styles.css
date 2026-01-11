@@ -562,6 +562,39 @@ section:nth-child(even) {
   color: var(--accent-primary);
   font-weight: 600;
 }
+.education-note a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  word-break: break-all;
+  transition: var(--transition-fast);
+}
+.education-note a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+.transcript-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid var(--accent-primary);
+  border-radius: 8px;
+  background: transparent;
+  transition: var(--transition-fast);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.transcript-link:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
 
 /* Contact */
 .contact-grid { 
