@@ -243,3 +243,78 @@ function setOptimalSkillsGrid() {
 // Call on load and resize
 setOptimalSkillsGrid();
 window.addEventListener('resize', setOptimalSkillsGrid);
+
+// Active navigation highlight on scroll
+function updateActiveNavLink() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  
+  let current = '';
+  const scrollPosition = window.scrollY + 150; // Offset para activar antes
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    
+    // Si estamos dentro de esta sección (con offset)
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      current = section.getAttribute('id');
+    }
+  });
+  
+  // Si llegamos al final de la página, activar contact
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+    current = 'contact';
+  }
+  
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveNavLink);
+updateActiveNavLink(); // Initial call
+
+// Custom Cursor
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
+
+if (cursorDot && cursorOutline) {
+  let mouseX = 0, mouseY = 0;
+  let outlineX = 0, outlineY = 0;
+  
+  // Actualizar posición del ratón
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    
+    // El punto sigue inmediatamente
+    cursorDot.style.left = mouseX + 'px';
+    cursorDot.style.top = mouseY + 'px';
+  });
+  
+  // El círculo sigue con retraso suave (efecto laggy)
+  function animateOutline() {
+    outlineX += (mouseX - outlineX) * 0.15;
+    outlineY += (mouseY - outlineY) * 0.15;
+    
+    cursorOutline.style.left = outlineX + 'px';
+    cursorOutline.style.top = outlineY + 'px';
+    
+    requestAnimationFrame(animateOutline);
+  }
+  animateOutline();
+  
+  // Expandir en hover de elementos interactivos
+  document.querySelectorAll('a, button, .skill-card, .education-card, .contact-card').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursorOutline.classList.add('expand');
+    });
+    el.addEventListener('mouseleave', () => {
+      cursorOutline.classList.remove('expand');
+    });
+  });
+}

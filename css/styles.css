@@ -48,6 +48,7 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   -webkit-font-smoothing: antialiased;
+  cursor: none;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   color: var(--text-primary);
@@ -94,7 +95,7 @@ nav {
   filter: brightness(0) saturate(100%) invert(66%) sepia(42%) saturate(1000%) hue-rotate(189deg) brightness(105%) contrast(101%);
 }
 [data-theme="dark"] .logo:hover .logo-img {
-  filter: brightness(0) saturate(100%) invert(79%) sepia(27%) saturate(1200%) hue-rotate(188deg) brightness(103%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(66%) sepia(42%) saturate(1000%) hue-rotate(189deg) brightness(105%) contrast(101%);
 }
 .nav-links { 
   display: flex; 
@@ -120,10 +121,12 @@ nav {
   background: var(--accent-primary);
   transition: width 0.2s ease;
 }
-.nav-links a:hover { 
+.nav-links a:hover,
+.nav-links a.active { 
   color: var(--accent-primary);
 }
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
   width: 100%;
 }
 .controls { 
@@ -137,7 +140,6 @@ nav {
   width: 36px; 
   height: 36px; 
   border-radius: 6px; 
-  cursor: pointer; 
   display: flex; 
   align-items: center; 
   justify-content: center; 
@@ -166,7 +168,6 @@ nav {
   width: 36px; 
   height: 36px; 
   border-radius: 4px; 
-  cursor: pointer; 
   font-weight: 600;
   font-size: 0.85rem;
   transition: var(--transition-fast); 
@@ -455,7 +456,6 @@ section:nth-child(even) {
   padding: 2rem; 
   box-shadow: var(--shadow-sm); 
   border: 1px solid var(--border-light); 
-  cursor: pointer; 
   transition: var(--transition); 
   overflow: hidden;
 }
@@ -911,4 +911,55 @@ button:focus-visible {
 :focus-visible {
   outline: 2px solid var(--accent-primary);
   outline-offset: 2px;
+}
+
+/* Custom Cursor */
+a, button, .skill-card, .education-card, .tech-tag, .contact-card {
+  cursor: none !important;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s;
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--accent-primary);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.2s;
+  opacity: 0.6;
+}
+
+.cursor-outline.expand {
+  width: 60px;
+  height: 60px;
+  opacity: 0.4;
+}
+
+/* Ocultar cursor personalizado en dispositivos táctiles */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    cursor: auto !important;
+  }
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
 }
