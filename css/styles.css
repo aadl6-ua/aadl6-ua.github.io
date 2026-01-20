@@ -714,6 +714,214 @@ section:nth-child(even) {
   font-size: 0.95rem;
 }
 
+/* Projects Grid */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--accent-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.project-meta h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.25px;
+}
+
+.project-type {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.project-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: -0.5rem;
+}
+
+.feature-note {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding: 0.625rem 0.875rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent-primary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.feature-note i {
+  color: var(--accent-primary);
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+.feature-note strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.feature-note .inline-link {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: var(--transition-fast);
+}
+
+.feature-note .inline-link:hover {
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tag {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border: 1px solid var(--border-light);
+  transition: var(--transition-fast);
+}
+
+.project-tag:hover {
+  background: var(--accent-light);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+.project-tag i {
+  font-size: 0.9rem;
+}
+
+.project-tag .uni-logo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+/* More Projects Message */
+.more-projects {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+}
+
+.more-projects p {
+  color: var(--text-tertiary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.more-projects i {
+  color: var(--accent-primary);
+}
+
+.project-links {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.project-link {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.project-link-primary {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+.project-link-primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: white;
+}
+
 /* Projects Coming Soon */
 .coming-soon { 
   text-align: center; 

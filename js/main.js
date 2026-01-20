@@ -57,6 +57,13 @@ const translations = {
     'projects-title': 'Proyectos',
     'projects-coming': 'Próximamente',
     'projects-description': 'Pronto compartiré aquí mis proyectos más destacados. Mantente al tanto para ver aplicaciones full stack, proyectos de machine learning y mucho más.',
+    'project1-type': 'Visualización de Datos & Analytics',
+    'project1-description': 'Dashboard analítico integral construido con R Shiny para explorar datos de ventas musicales. El proyecto incluye ingeniería de datos extensiva con SQL para estructurar y transformar datasets originales, seguido de visualizaciones interactivas con mapas de calor geográficos, tendencias temporales de ventas, análisis por género y segmentación de clientes. Implementa filtrado avanzado, controles de umbral e interacciones reactivas de usuario para permitir exploración dinámica de datos. Desarrollado durante el curso Data Analysis in Business en la Universidad de Silesia.',
+    'project2-type': 'Machine Learning & Ciencia de Datos',
+    'project2-description': 'Aplicación web completa para análisis de clustering con machine learning no supervisado. Implementa algoritmos K-means, DBSCAN y Jerárquico con optimización automática de parámetros. Características: parsing inteligente de CSV (auto-detecta separadores y headers), preprocesamiento automático (imputación, codificación, eliminación de outliers), visualizaciones interactivas 2D/3D con Plotly, y métricas de evaluación completas. Incluye tres datasets precargados (Iris, Ausentismo, Coches) con variables objetivo eliminadas para demostrar aprendizaje no supervisado puro. Los usuarios pueden subir datasets personalizados—para principiantes, se recomienda el dataset Iris por su estructura de clustering clara. Desarrollado durante el curso Cluster Analysis en la Universidad de Silesia.',
+    'project-live': 'Demo en Vivo',
+    'project-code': 'Código',
+    'more-projects': 'Más proyectos en camino...',
     'contact-title': 'Contacto',
     'footer': 'Todos los derechos reservados.'
   },
@@ -117,6 +124,13 @@ const translations = {
     'projects-title': 'Projects',
     'projects-coming': 'Coming Soon',
     'projects-description': 'I will soon share my most notable projects here. Stay tuned to see full stack applications, machine learning projects and much more.',
+    'project1-type': 'Data Visualization & Analytics',
+    'project1-description': 'Comprehensive analytics dashboard built with R Shiny for exploring music sales data. The project includes extensive SQL data engineering to structure and transform raw datasets, followed by interactive visualizations featuring geographic heat maps, temporal sales trends, genre analysis, and customer segmentation. Implements advanced filtering, threshold controls, and reactive user interactions to enable dynamic data exploration. Developed during Data Analysis in Business course at University of Silesia.',
+    'project2-type': 'Machine Learning & Data Science',
+    'project2-description': 'Full-featured web application for unsupervised machine learning clustering analysis. Implements K-means, DBSCAN, and Hierarchical clustering algorithms with automatic parameter optimization. Features intelligent CSV parsing (auto-detects separators and headers), automatic preprocessing (imputation, encoding, outlier removal), interactive 2D/3D visualizations with Plotly, and comprehensive evaluation metrics. Includes three pre-loaded datasets (Iris, Absenteeism, Cars) with target variables removed to demonstrate pure unsupervised learning. Users can upload custom datasets—for beginners, the Iris dataset is recommended for its clear clustering structure. Developed during Cluster Analysis course at University of Silesia.',
+    'project-live': 'Live Demo',
+    'project-code': 'Code',
+    'more-projects': 'More projects coming soon...',
     'contact-title': 'Contact',
     'footer': 'All rights reserved.'
   }
