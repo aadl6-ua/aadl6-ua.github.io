@@ -1,68 +1,71 @@
 # Portfolio - Álvaro Andrés De Lamo
 
-Portfolio profesional de Álvaro Andrés De Lamo, estudiante de Ingeniería Informática en la Universidad de Alicante con experiencia internacional.
+Professional portfolio of Álvaro Andrés De Lamo, Computer Engineering student at Universidad de Alicante with international experience.
 
-Sitio: [aadl6-ua.github.io](https://aadl6-ua.github.io)
+Site: [aadl6-ua.github.io](https://aadl6-ua.github.io)
 
-## Características
+## Features
 
-- Diseño moderno y responsive
-- Modo claro/oscuro con persistencia
-- Multiidioma (Español/Inglés)
-- Optimización móvil y rendimiento sin frameworks pesados
-- SEO y accesibilidad cuidados
+- Modern and responsive design
+- Light/dark mode with persistence
+- Multilingual (Spanish/English)
+- Mobile optimization and performance without heavy frameworks
+- SEO and accessibility focused
 
-## Estructura del proyecto
+## Project Structure
 
 ```
 aadl6-ua.github.io/
 ├── index.html
 ├── _config.yml
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
 ├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── main.js
-│   └── img/
-│       └── (imágenes del sitio)
+│   ├── img/
+│   │   └── (site images)
+│   ├── data/
+│   │   └── cars.csv
+│   └── pdf/
 └── README.md
 ```
 
-## Personalización
+## Customization
 
-### Añadir tu foto de perfil
+### Add your profile photo
 
-1. Coloca tu imagen en `assets/img/` (por ejemplo `pfp.jpeg`).
-2. En `index.html`, actualiza el atributo `src` de la imagen principal:
+1. Place your image in `assets/img/` (e.g., `pfp.jpeg`).
+2. In `index.html`, update the `src` attribute of the main image:
 
 ```html
 <img src="assets/img/pfp.jpeg" alt="Álvaro Andrés De Lamo" class="profile-image" />
 ```
 
-### Cambiar colores
+### Change colors
 
-Las variables de color están al inicio de `assets/css/styles.css` en los bloques `:root` y `[data-theme="dark"]`.
+Color variables are at the beginning of `css/styles.css` in the `:root` and `[data-theme="dark"]` blocks.
 
-### Añadir proyectos
+### Add projects
 
-Edita la sección con id `projects` en `index.html` y reemplaza el bloque “Próximamente” por tus tarjetas de proyecto.
+Edit the section with id `projects` in `index.html` and add your project cards.
 
-## Tecnologías utilizadas
+## Technologies Used
 
-- HTML5 semántico
+- Semantic HTML5
 - CSS3 (variables, Grid, Flexbox)
-- JavaScript Vanilla
+- Vanilla JavaScript
 - GitHub Pages
 
 ## SEO
 
-Incluye meta tags, Open Graph, Schema.org y se publica con GitHub Pages.
+Includes meta tags, Open Graph, Schema.org, and published with GitHub Pages.
 
-## Despliegue
+## Deployment
 
-Se publica automáticamente en GitHub Pages al hacer push a `main`.
+Automatically published on GitHub Pages when pushing to `main`.
 
-## Contacto
+## Contact
 
 - Email: alvaroandresdelamo@gmail.com
 - LinkedIn: [linkedin.com/in/alvaro-andres-de-lamo-50149b358](https://www.linkedin.com/in/alvaro-andres-de-lamo-50149b358)
