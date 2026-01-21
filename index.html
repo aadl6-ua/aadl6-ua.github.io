@@ -325,12 +325,12 @@
               </div>
             </div>
             <p class="project-description" data-i18n-key="project2-description">
-              Full-featured web application for unsupervised machine learning clustering analysis. Implements K-means, DBSCAN, and Hierarchical clustering algorithms with automatic parameter optimization. Features intelligent CSV parsing (auto-detects separators and headers), automatic preprocessing (imputation, encoding, outlier removal), interactive 2D/3D visualizations with Plotly, and comprehensive evaluation metrics. Includes two pre-loaded datasets (Iris, Absenteeism) with target variables removed to demonstrate pure unsupervised learning. Users can upload custom datasets—for beginners, the Iris dataset is recommended for its clear clustering structure. Developed during Cluster Analysis course at University of Silesia.
+              Aplicación web completa para análisis de clustering con machine learning no supervisado. Implementa algoritmos K-means, DBSCAN y Jerárquico con optimización automática de parámetros. Incluye parsing inteligente de CSV que detecta automáticamente separadores y headers, preprocesamiento automático con imputación de valores faltantes, codificación de variables categóricas y eliminación de outliers, visualizaciones interactivas 2D/3D con Plotly, y métricas de evaluación completas. Incorpora tres datasets precargados (Iris, Ausentismo, Coches) con variables objetivo eliminadas para demostrar aprendizaje no supervisado puro. Los usuarios pueden subir datasets personalizados. Para principiantes, se recomienda el dataset Iris por su estructura de clustering clara. Desarrollado durante el curso Cluster Analysis en la Universidad de Silesia.
             </p>
             <div class="project-features">
-              <p class="feature-note"><i class="fa-solid fa-info-circle"></i> <strong>Dataset Note:</strong> Provided datasets have classification/target columns removed to enable true unsupervised clustering analysis.</p>
-              <p class="feature-note"><i class="fa-solid fa-download"></i> <strong>Test Upload Feature:</strong> <a href="assets/data/cars.csv" download class="inline-link">Download Cars dataset</a> to test the custom file upload functionality.</p>
-              <p class="feature-note"><i class="fa-solid fa-lightbulb"></i> <strong>Recommended for Beginners:</strong> Start with the Iris dataset—it has well-defined natural clusters and is easiest to interpret.</p>
+              <p class="feature-note" data-i18n-key="project2-note1"><i class="fa-solid fa-info-circle"></i> <strong>Nota del Dataset:</strong> Los datasets proporcionados tienen las columnas de clasificación/objetivo eliminadas para permitir análisis de clustering no supervisado real.</p>
+              <p class="feature-note" data-i18n-key="project2-note2"><i class="fa-solid fa-download"></i> <strong>Prueba la Carga de Archivos:</strong> <a href="assets/data/cars.csv" download class="inline-link">Descarga el dataset Cars</a> para probar la funcionalidad de carga de archivos personalizados.</p>
+              <p class="feature-note" data-i18n-key="project2-note3"><i class="fa-solid fa-lightbulb"></i> <strong>Recomendado para Principiantes:</strong> Comienza con el dataset Iris, tiene clusters naturales bien definidos y es el más fácil de interpretar.</p>
             </div>
             <div class="project-tags">
               <span class="project-tag project-tag-uni"><img src="assets/img/university-of-silesia.png.avif" alt="University of Silesia" class="uni-logo"> University of Silesia</span>
@@ -351,6 +351,44 @@
             </div>
           </div>
 
+          <!-- Decision Trees Dashboard -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-tree"></i>
+              </div>
+              <div class="project-meta">
+                <h3>Interactive Decision Trees Dashboard</h3>
+                <p class="project-type" data-i18n-key="project3-type">Machine Learning & Data Science</p>
+              </div>
+            </div>
+            <p class="project-description" data-i18n-key="project3-description">
+              Aplicación web completa para entrenamiento y análisis de árboles de decisión con extracción automática de reglas. Implementa algoritmo DecisionTreeClassifier de scikit-learn con optimización de hiperparámetros configurable (criterio Gini/Entropy, profundidad máxima, tamaños mínimos de división). Incluye parsing inteligente de CSV con detección automática de separadores y headers, preprocesamiento automático con imputación de valores faltantes, codificación de variables categóricas y división train/test. Las visualizaciones interactivas incluyen matriz de confusión con Plotly, importancia de variables, estructura completa del árbol con matplotlib y análisis de profundidad. El sistema extrae reglas de decisión en formato IF-THEN legible y permite exportar predicciones, importancias y resumen del modelo. Incluye dataset Cars precargado para demostración. Desarrollado durante el curso Decision and Association Rules en la Universidad de Silesia.
+            </p>
+            <div class="project-features">
+              <p class="feature-note" data-i18n-key="project3-note1"><i class="fa-solid fa-info-circle"></i> <strong>Nota del Dataset:</strong> El dataset Cars incluido clasifica vehículos en categorías de aceptabilidad basándose en características como precio, mantenimiento, puertas, capacidad de pasajeros, maletero y seguridad.</p>
+              <p class="feature-note" data-i18n-key="project3-note2"><i class="fa-solid fa-sliders"></i> <strong>Configuración Flexible:</strong> Ajusta hiperparámetros en tiempo real para observar cómo afectan la estructura del árbol, las reglas extraídas y las métricas de rendimiento.</p>
+              <p class="feature-note" data-i18n-key="project3-note3"><i class="fa-solid fa-lightbulb"></i> <strong>Recomendado para Principiantes:</strong> El dataset Cars incluido tiene reglas de decisión claras y es ideal para entender cómo funcionan los árboles de decisión.</p>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag project-tag-uni"><img src="assets/img/university-of-silesia.png.avif" alt="University of Silesia" class="uni-logo"> University of Silesia</span>
+              <span class="project-tag"><i class="devicon-python-plain"></i> Python</span>
+              <span class="project-tag">Streamlit</span>
+              <span class="project-tag">Scikit-learn</span>
+              <span class="project-tag">Plotly</span>
+              <span class="project-tag">Matplotlib</span>
+              <span class="project-tag">Pandas</span>
+            </div>
+            <div class="project-links">
+              <a href="https://decision-trees-dashboard.streamlit.app" target="_blank" class="project-link project-link-primary">
+                <i class="fa-solid fa-external-link-alt"></i> <span data-i18n-key="project-live">Demo en Vivo</span>
+              </a>
+              <a href="https://github.com/aadl6-ua/decision-trees-dashboard" target="_blank" class="project-link">
+                <i class="fa-brands fa-github"></i> <span data-i18n-key="project-code">Código</span>
+              </a>
+            </div>
+          </div>
+
           <!-- Music Sales Analytics Dashboard -->
           <div class="project-card">
             <div class="project-header">
@@ -363,7 +401,7 @@
               </div>
             </div>
             <p class="project-description" data-i18n-key="project1-description">
-              Comprehensive analytics dashboard built with R Shiny for exploring music sales data. The project includes extensive SQL data engineering to structure and transform raw datasets, followed by interactive visualizations featuring geographic heat maps, temporal sales trends, genre analysis, and customer segmentation. Implements advanced filtering, threshold controls, and reactive user interactions to enable dynamic data exploration. Developed during Data Analysis in Business course at University of Silesia.
+              Dashboard analítico integral construido con R Shiny para explorar datos de ventas musicales. El proyecto incluye ingeniería de datos extensiva con SQL para estructurar y transformar datasets originales, seguido de visualizaciones interactivas con mapas de calor geográficos, tendencias temporales de ventas, análisis por género y segmentación de clientes. Implementa filtrado avanzado, controles de umbral e interacciones reactivas de usuario para permitir exploración dinámica de datos. Desarrollado durante el curso Data Analysis in Business en la Universidad de Silesia.
             </p>
             <div class="project-tags">
               <span class="project-tag project-tag-uni"><img src="assets/img/university-of-silesia.png.avif" alt="University of Silesia" class="uni-logo"> University of Silesia</span>
