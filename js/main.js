@@ -209,6 +209,12 @@ function updateLanguage(lang) {
       element.textContent = translations[lang][key];
     }
   });
+  document.querySelectorAll('[data-i18n-html]').forEach(element => {
+    const key = element.getAttribute('data-i18n-html');
+    if (translations[lang] && translations[lang][key]) {
+      element.innerHTML = translations[lang][key];
+    }
+  });
   document.documentElement.lang = lang;
   localStorage.setItem('language', lang);
   if (lang === 'es') {
