@@ -20,7 +20,7 @@ const translations = {
     'skill-cloud': 'Cloud Computing',
     'skill-software': 'Ingeniería del Software',
     'skill-ml': 'Machine Learning',
-    'skill-ds': 'Data Structures & Algorithms',
+    'skill-ds': 'Estructuras de Datos y Algoritmos',
     'skill-db': 'Bases de Datos',
     'skill-networks': 'Redes de Computadores',
     'skill-data': 'Análisis de Datos',
